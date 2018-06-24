@@ -1,12 +1,11 @@
 # README
 
-* Requirement
-
+## Requirement
  - Ruby version = 2.5.0
  - Rails version = 5.2.0
  - Cloudinary Account https://cloudinary.com/
 
-* Installation
+## Installation
 
 ```
 # cd Project_directory_somewhere
