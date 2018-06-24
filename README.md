@@ -1,24 +1,44 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Requirement
 
-Things you may want to cover:
+ - Ruby version = 2.5.0
+ - Rails version = 5.2.0
+ - Cloudinary Account https://cloudinary.com/
 
-* Ruby version
+* Installation
 
-* System dependencies
+```
+# cd Project_directory_somewhere
+$ git clone --depth 1 https://github.com/hogemax/test_cloudinary.git
+$ bundle install --path vendor/bundle --jobs=4
+$ bundle exec rails db:migrate
 
-* Configuration
+# For example, need direnv in this after
+```
 
-* Database creation
+### How to install direnv
+```
+$ brew install direnv
 
-* Database initialization
+ or
 
-* How to run the test suite
+$ git clone http://github.com/zimbatm/direnv
+$ cd direnv
+$ sudo make install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### input your Cloudinary YML data
+```
+$ direnv edit .
 
-* Deployment instructions
+#Setting for cloudinary
+export CLOUDINARY_CLOUD_NAME="xxxxxxxx"
+export CLOUDINARY_API_KEY="xxxxxxxxxxxxx"
+export CLOUDINARY_API_SECRET="xxxxxxxxxxxxx"
+```
 
-* ...
+### Try on local server
+```
+bundle exec rails s
+```
